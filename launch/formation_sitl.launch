@@ -1,0 +1,22 @@
+<launch>
+    <group ns="uav0_sim">
+      <node pkg="formation_simulation" type="uav0_control" name="uav0_control" output="screen"/>
+      <node pkg="formation_simulation" type="uav0_communication" name="uav0_communication" output="screen"/>
+    </group>
+      <group ns="uav1_sim">
+      <node pkg="formation_simulation" type="uav1_control" name="uav1_control" output="screen"/>
+      <node pkg="formation_simulation" type="uav1_communication" name="uav1_communication" output="screen"/>
+    </group>
+      <group ns="uav2_sim">
+      <node pkg="formation_simulation" type="uav2_control" name="uav2_control" output="screen"/>
+      <node pkg="formation_simulation" type="uav2_communication" name="uav2_communication" output="screen"/>
+    </group>
+      <group ns="uav3_sim">
+      <node pkg="formation_simulation" type="uav3_control" name="uav3_control" output="screen"/>
+      <node pkg="formation_simulation" type="uav3_communication" name="uav3_communication" output="screen"/>
+    </group>
+      <group ns="uav4_sim">
+      <node pkg="formation_simulation" type="uav4_control" name="uav4_control" output="screen"/>
+      <node pkg="formation_simulation" type="uav4_communication" name="uav4_communication" output="screen"/>
+    </group>
+</launch>
