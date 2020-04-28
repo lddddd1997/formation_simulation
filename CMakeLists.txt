@@ -155,6 +155,16 @@ include_directories(
  add_executable(uav3_communication src/uav/uav3/uav3_communication.cpp)
  add_executable(uav4_control src/uav/uav4/uav4_control.cpp)
  add_executable(uav4_communication src/uav/uav4/uav4_communication.cpp)
+ add_dependencies(uav0_control ${${PROJECT_NAME}_EXPORTED_TARGETS})
+ add_dependencies(uav0_communication ${${PROJECT_NAME}_EXPORTED_TARGETS})
+ add_dependencies(uav1_control ${${PROJECT_NAME}_EXPORTED_TARGETS})
+ add_dependencies(uav1_communication ${${PROJECT_NAME}_EXPORTED_TARGETS})
+ add_dependencies(uav2_control ${${PROJECT_NAME}_EXPORTED_TARGETS})
+ add_dependencies(uav2_communication ${${PROJECT_NAME}_EXPORTED_TARGETS})
+ add_dependencies(uav3_control ${${PROJECT_NAME}_EXPORTED_TARGETS})
+ add_dependencies(uav3_communication ${${PROJECT_NAME}_EXPORTED_TARGETS})
+ add_dependencies(uav4_control ${${PROJECT_NAME}_EXPORTED_TARGETS})
+ add_dependencies(uav4_communication ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
