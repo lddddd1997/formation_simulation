@@ -20,3 +20,4 @@ v1.0.0
     
     5. 在地面控制端进入offboard模式后，解锁实现一键起飞
     
+***该仓库不再更新，请移步到新仓库[px4_application](https://github.com/lddddd1997/px4_application)***
